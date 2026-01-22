@@ -28,28 +28,28 @@ Download the latest release for your platform from the [Releases](../../releases
 
 **Linux (AMD64):**
 ```bash
-curl -LO https://github.com/yourusername/git-usr/releases/latest/download/git-usr-linux-amd64
+curl -LO https://github.com/amantham20/git-usr/releases/latest/download/git-usr-linux-amd64
 chmod +x git-usr-linux-amd64
 sudo mv git-usr-linux-amd64 /usr/local/bin/git-usr
 ```
 
 **macOS (Apple Silicon):**
 ```bash
-curl -LO https://github.com/yourusername/git-usr/releases/latest/download/git-usr-darwin-arm64
+curl -LO https://github.com/amantham20/git-usr/releases/latest/download/git-usr-darwin-arm64
 chmod +x git-usr-darwin-arm64
 sudo mv git-usr-darwin-arm64 /usr/local/bin/git-usr
 ```
 
 **macOS (Intel):**
 ```bash
-curl -LO https://github.com/yourusername/git-usr/releases/latest/download/git-usr-darwin-amd64
+curl -LO https://github.com/amantham20/git-usr/releases/latest/download/git-usr-darwin-amd64
 chmod +x git-usr-darwin-amd64
 sudo mv git-usr-darwin-amd64 /usr/local/bin/git-usr
 ```
 
 **Windows (PowerShell):**
 ```powershell
-Invoke-WebRequest -Uri "https://github.com/yourusername/git-usr/releases/latest/download/git-usr-windows-amd64.exe" -OutFile "git-usr.exe"
+Invoke-WebRequest -Uri "https://github.com/amantham20/git-usr/releases/latest/download/git-usr-windows-amd64.exe" -OutFile "git-usr.exe"
 # Move git-usr.exe to a directory in your PATH
 ```
 
