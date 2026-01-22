@@ -284,7 +284,7 @@ func showCurrent() error {
 // showHelp displays help information
 func showHelp() {
 	configPath, _ := getConfigPath()
-	
+
 	fmt.Println(`
 🔧 Git User Profile Switcher
 
