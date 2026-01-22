@@ -1,0 +1,32 @@
+# Ignore compiled binaries
+git-usr
+git-usr.exe
+git-me
+git-me.exe
+
+# Go build artifacts
+*.o
+*.a
+*.so
+
+# Test coverage
+*.out
+coverage.html
+
+# Dependency directories
+vendor/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test coverage
+*.out
+coverage.html
