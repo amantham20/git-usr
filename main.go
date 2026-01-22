@@ -214,11 +214,15 @@ func addProfile(profileName, name, email string) error {
 	// Interactive mode if name/email not provided
 	if name == "" {
 		fmt.Print("Enter name: ")
-		fmt.Scanln(&name)
+		if _, err := fmt.Scanln(&name); err != nil {
+			return fmt.Errorf("failed to read name: %w", err)
+		}
 	}
 	if email == "" {
 		fmt.Print("Enter email: ")
-		fmt.Scanln(&email)
+		if _, err := fmt.Scanln(&email); err != nil {
+			return fmt.Errorf("failed to read email: %w", err)
+		}
 	}
 
 	if name == "" || email == "" {
