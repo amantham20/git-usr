@@ -54,6 +54,9 @@ Invoke-WebRequest -Uri "https://github.com/amantham20/git-usr/releases/latest/do
 
 New-Item -ItemType Directory -Force "$env:USERPROFILE\bin" | Out-Null
 Move-Item .\git-usr.exe "$env:USERPROFILE\bin\git-usr.exe" -Force
+
+$newPath = [Environment]::GetEnvironmentVariable("Path","User") + ";$env:USERPROFILE\bin"
+[Environment]::SetEnvironmentVariable("Path", $newPath, "User")
 ```
 
 #### Option 2: Build from Source
