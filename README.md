@@ -51,6 +51,9 @@ sudo mv git-usr-darwin-amd64 /usr/local/bin/git-usr
 ```powershell
 Invoke-WebRequest -Uri "https://github.com/amantham20/git-usr/releases/latest/download/git-usr-windows-amd64.exe" -OutFile "git-usr.exe"
 # Move git-usr.exe to a directory in your PATH
+
+New-Item -ItemType Directory -Force "$env:USERPROFILE\bin" | Out-Null
+Move-Item .\git-usr.exe "$env:USERPROFILE\bin\git-usr.exe" -Force
 ```
 
 #### Option 2: Build from Source
